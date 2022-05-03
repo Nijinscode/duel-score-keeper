@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="container">
+        <section id="displayContainer">
+            <section id="display">
+                <div id="titleMessageDiv">
+                    <h1>THE BATTLE BEGINS!</h1>
+                </div>
+                <p class="titlebar" id="roundTimeTitle"> ROUND TIME</p>
+                <p id="time" class="numbers"></p>
+                <button id="start" class="buttons">START</button>
+                <p id="playerScoresTitle" class="titlebar"> PLAYER SCORES </p>
+                <p id="score" class="numbers"></p>
+            </section>
+            <section id="controls">
+                <button id="player1" class="buttons">+1 PLAYER ONE</button>
+                <button id="player2" class="buttons">+1 PLAYER TWO</button>
+                <button id="next" class="buttons">NEXT ROUND</button>
+                <button id="reset" class="buttons">RESET</button>
+            </section>
+        </section>
+        <section id="dataContainer">
+            <table id="scoreTable">
+                <thead>
+                    <tr>
+                        <th id="roundNumberTitle" class="headings">ROUND</th>
+                        <th id="player1ScoreTitle" class="headings">PLAYER ONE</th>
+                        <th id="player2ScoreTitle" class="headings">PLAYER TWO</th>
+                        <th id="timeElapsedTitle" class="headings">TIME</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
